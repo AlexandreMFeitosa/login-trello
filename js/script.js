@@ -11,13 +11,17 @@ btn.addEventListener("click" , () => {
         
         alert("Campo login ou senha vazio, favor preeencher o campo corretamente !");
 
-    } else if (isNaN(valueSenha) ) {
-
-        alert("A senha não é um numero ! "); // teste
-
-    } else if (!valueName.includes('@gmail.com' , '@hotmail.com' , '@live.com')) {
+    } else if (!valueName.includes('@gmail.com') && (!valueName.includes('@hotmail.com') && (!valueName.includes('@live.com')))) {
         
         alert("Favor use um e-mail valido ! ( Ex: @gmail.com , @hotmail.com ..."); // teste
+
+    } else if (valueSenha.toString().length > 0 && valueSenha.toString().length > 8) {
+
+        alert("A senha precisar ter no minímo e 8 caracteres ! "); // teste 
+    
+    } else {
+
+        alert(`Login efeutado com sucesso !`);
     }
 
 });
