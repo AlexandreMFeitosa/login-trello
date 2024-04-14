@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
     min-height: 100vh;
     color: #fafafa;
-    background-image: linear-gradient(blue ,red , #ccc);
+    background-image: linear-gradient(red , blue);
     
 }
 
@@ -20,9 +20,9 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 400px;
-    max-width: 500px;
-    padding: 4rem;
+    min-height: 300px;
+    max-width: 400px;
+    padding: 2rem;
     background-color: #1726f8;
     border-radius: 5px;
 }
@@ -30,7 +30,7 @@ body {
 #table-login h3 {
     text-align: center;
     padding-bottom: 2rem;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .login , .password {
@@ -44,23 +44,10 @@ body {
 }
 
 #table-login input {
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 5px;
     border: none;
 }
-
-#table-login button {
-    text-transform: uppercase;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(248, 81, 81);
-    color: #fff;
-    cursor: pointer;
-}
-
 
 #links {
     display: flex;
@@ -86,25 +73,22 @@ body {
     font-weight: bold;
 }
 
-footer {
+.enter-btn {
+    background-color: red;
+    margin-top: 1.0rem;
+    margin-bottom: 1.0rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
     color: #fafafa;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    
+    text-transform: uppercase;
 }
+
 
 footer a {
-    text-decoration: none;
-    color: #fafafa;
-    
-}
-
-
-
-/* Button enviar pagina -  ESQUECEU A SENHA */
-
-.enviar {
     display: flex;
     justify-content: center;
+    text-decoration: none;
+    color: #fafafa;
 }
+
